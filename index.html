@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -38,6 +37,14 @@
     .matchSelector {
         margin-bottom: 15px;
     }
+
+    .searchLabel {
+        margin-right: 15px;
+    }
+
+    #searchBySelect {
+        margin-top: -5px;
+    }
 </style>
 
 <body>
@@ -75,16 +82,16 @@
             <button class="btn btn-outline-success">Submit</button>
         </div>
         <div class="d-flex" id="dataSelectForm">
-            <label class="times">Search by: </label>
+            <label class="times searchLabel">Search by:</label>
             <select name="searchBy" id="searchBySelect" class="btn btn-outline-primary headingButtons">
                 <option value="match">Match</option>
                 <option value="team">Team Number</option>
-
             </select>
         </div>
+        <br>
         <form class="d-flex" id="dataDetailForm">
-            <input class="form-control me-2" type="text" placeholder="Enter Match Number">
-            <input class="form-control me-2" type="text" placeholder="Search">
+            <input class="form-control me-2" type="text" placeholder="Enter Match Number" id="matchInput">
+            <input class="form-control me-2" type="text" placeholder="Enter Team Number" id="teamInput">
             <input class="form-control me-2" type="text" placeholder="Search">
             <button class="btn btn-primary" type="button">Search</button>
         </form>
